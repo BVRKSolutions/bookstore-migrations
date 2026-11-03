@@ -1,0 +1,2 @@
+# Keep local database credentials out of version control.
+.env
