@@ -1,0 +1,12 @@
+[environments.bookstore]
+url = "jdbc:mysql://localhost:3306/online_bookstore"
+user = "root"
+password = "${env.BOOKSTORE_DB_PASSWORD}"
+
+[flyway]
+environment = "bookstore"
+locations = ["filesystem:sql"]
+baselineVersion = "1"
+baselineDescription = "Existing online bookstore schema"
+validateMigrationNaming = true
+
